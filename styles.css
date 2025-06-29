@@ -1,0 +1,333 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size:100px 100px ;
+}
+
+/* *********** */
+/* Index.html  */
+/* *********** */
+
+.wrap-index {
+text-align: center;
+font-size: 25px;
+}
+
+.wrap-index h1 {
+    color: red;
+    font-family: fantasy;
+    font-weight: lighter;
+    font-size: 55px;
+}
+
+.wrap-index #form #input{
+    font-size: 35px;
+    border: 3px rgb(255, 0, 0) solid;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+.wrap-index #form #submit{
+    font-size: 25px;
+    border: 5px rgb(255, 0, 0) solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 150px;
+    padding: 25px 35px;
+    margin: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.wrap-index #form #submit:hover{
+    font-size: 25px;
+    border: 5px rgb(255, 0, 0) solid;
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+    border-radius: 150px;
+    padding: 25px 35px;
+    margin: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.wrap-index .pages {
+    margin-top: 130px;
+} 
+
+
+.main-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+
+/* IMG */
+#logo{
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 80%;
+    width: 220px;
+    transform: rotate(0deg);
+    z-index: 10;
+}
+
+/* ********** */
+/* Questions  */
+/* ********** */
+
+
+.wrap {
+text-align: center;
+font-size: 20px;
+
+}
+
+/* Titles */
+.wrap h1 {
+    color: red;
+}
+
+.wrap h2 {
+    color: blue;
+}
+
+/* Questions */
+.wrap .question {
+    font-size: 35px;
+}
+
+/* Answers */
+.answers button{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 25px;
+    border: 3px solid red;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 30px 60px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/*improve touch feedback and prevent stuck styles */
+.answer-btn {
+    background-color: #fff; /* your normal button background */
+    color: #000;            /* default text color */
+    border: 1px solid #ccc; /* neutral border */
+    outline: none;          /* remove default focus */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    -webkit-tap-highlight-color: transparent; /* iOS tap highlight fix */
+}
+
+.answer-btn :focus {
+    outline: none;
+    border: 1px solid #ccc;
+}
+.answer-btn:active{
+    background-color: #000;
+}
+
+.btn-correct{
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+
+.btn-wrong {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+
+.answers button:hover{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    padding: 20px 25px;
+    border: 3px solid red;
+    background: gray;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 30px 60px;
+    cursor: pointer;
+}
+
+
+/* Hrefs */
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+    padding: 0px 500px;
+}
+
+.pages a{
+    color: blue;
+    text-decoration: none;
+    background-color: aliceblue;
+    font-weight: bold;
+    border: 5px blue solid;
+    border-radius: 15px;
+    padding: 5px 5px;
+    margin: 0px 10px;
+}
+
+.pages #home-page{
+    margin-bottom: 150px;
+}
+
+
+
+
+/* Alert message - name -Index*/
+#message-box-index{
+    font-size: 30px;
+    font-family: fantasy;
+    /* font-weight: ; */
+    display: none;
+    position: absolute;
+    padding: 15px 100px;    
+    margin: 480px 0;  
+    color: rgb(253, 253, 253); 
+    background: #000000; 
+    border: 5px solid red; 
+    border-radius: 100px; 
+}
+
+
+/* Overlay message */
+#message-box-quiz {
+    display: none;
+    position: fixed;
+    transform: rotate(-20deg);
+    bottom: -340px;
+    left: 25px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: red;
+    font-weight: bold;
+    font-size: 10rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: 100px;
+    padding: 150px;
+}
+
+/* Final Score */
+#message-box-score{
+    display: none;
+    position: fixed;
+    background-color: aliceblue;
+    border: 8px blue solid;
+    border-radius: 15px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 60px;
+    color: blue;
+    top: 250px;
+}
+
+
+/* *********** */
+/* Score.html */
+/* ********* */
+
+.wrap-score{
+    text-align: center;
+    font-size: 35px;
+}
+
+.wrap-score h1{
+    font-size: 85px;
+}
+
+.wrap-score .pages {
+    margin-top: 150px;
+}
+
+
+/************    Mobile version ***********/
+@media (max-width: 480px){
+    .answers button,
+    #correct, 
+    #wrong {
+        font-size: 1rem;
+        padding: 1rem;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #message-box-quiz{
+        font-size: 3rem;
+        padding: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .pages {
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+    .pages a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .pages #score{
+        margin-top: -2.5rem;
+    }
+
+    #logo{
+        display: none;
+        width: 120px;
+        top: 10px;
+        right: 20px;
+    }
+    .wrap-index{
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .wrap-index h1{
+        font-size: 2.5rem;
+        margin-top: -2rem;
+    }
+    .wrap-index .question {
+        font-size: 1rem;
+    }
+    #input{
+        font-size: 1rem;
+        width: 90%;
+    }
+    #submit {
+        font-size: 1rem;
+        padding: 1rem 1.6rem;
+    }
+    #mesage-box-index {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        margin-top: 2.8rem;
+        border-radius: 50px;
+    }
+    
+}
+
+@media (hover: none) {
+  .answers button:hover {
+    background: none;
+    color: inherit;
+  }
+}

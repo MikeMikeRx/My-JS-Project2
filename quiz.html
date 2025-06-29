@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+    <h1>My Quiz</h1>
+    <h2 id="question-title">First Question</h2>
+
+    <div class="question">
+        <p id="question-text">What is the name of the ship's computer on Red Dwarf?</p>
+    </div>
+
+    <div class="answers">
+        <button class="answer-btn">Queeg 500</button>
+        <button class="answer-btn">Holly</button>
+        <button class="answer-btn">Kryten</button>
+        <button class="answer-btn">Talkie Toaster</button>
+    </div>
+
+    <div class="time">
+        <p>Time: <span id="countdown">90</span></p>
+    </div>
+
+    <div class="score">
+        <p>Your Score: <span id="score">0</span></p>
+    </div>
+
+
+    <div class="pages">
+        <a href="index.html" id="home">Return to the home page</a>
+    </div>
+
+    <script src="functions.js"></script>
+    <script src="quiz.js"></script>
+</div>
+
+<div id="message-box-quiz" class="message-box"></div>
+<div id="message-box-score" class="message-box"></div>
+
+</body>
+</html>
